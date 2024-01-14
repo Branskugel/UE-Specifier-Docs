@@ -1569,7 +1569,9 @@ specifiers:
     type: string
     position: meta
     related: [ AllowedClasses, AllowAbstract ]
-    comment: Some datatypes like `FSoftClassPath` and `FSoftObjectPath` are not templated and allow any class type. `MetaClass` lets users allow only certain classes. In comparison `TSoftClassPtr` and `TSoftObjectPtr` use template parameters instead of `MetaClass`.    
+    comment:  |
+      Some datatypes like `FSoftClassPath` and `FSoftObjectPath` are not templated and allow any class type. `MetaClass` lets users allow only certain classes. In comparison `TSoftClassPtr` and `TSoftObjectPtr` use template parameters instead of `MetaClass`.
+      Also, doesn't work with `UClass` class viewer.
     examples: [ /Engine/Source/Developer/Localization/Public/LocalizationTargetTypes.h ]
     documentation:
       text: Used FSoftClassPath properties. Indicates the parent class that the class picker will use when filtering which classes to display.
